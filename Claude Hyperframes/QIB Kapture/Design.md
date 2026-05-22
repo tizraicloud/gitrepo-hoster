@@ -11,7 +11,7 @@
 - Text off-white (sub-labels) — `#EEF8FF`
 - Text ice (high-emphasis headlines) — `#DDFEFF`
 
-Cyan-on-navy throughout. No warm hues. When a comp has two panels, the right/secondary panel shifts from cyan (`#7DF9FF`) to soft blue (`#8BC3FF`).
+Cyan-on-navy throughout. No warm hues.
 
 ---
 
@@ -31,7 +31,9 @@ Keep copy short: 1–2 words for headlines, 2–4 words for kickers. Prefer icon
 ## Visual Aesthetic
 - Liquid-glass aesthetic — every surface is a frosted glass card on a dark navy base. Cyan-on-navy palette throughout; no warm hues.
 - Glass surfaces have: gradient overlay, dark navy fill, backdrop-filter blur, cyan border, inner highlight, outer glow, and a ::before shimmer layer. Each card also gets an aura bloom behind it and a light speck off one corner.
-
+- Keep comps centrally aligned to the video canvas
+- Ensure that the text is not too small or the comp is not very cramped
+  
 ## Icons
 
 Lucide inline SVG, `fill="none"`, `stroke="currentColor"`. Wrap in a div with `filter: drop-shadow(0 0 16px rgba(125,249,255,0.60))`.
@@ -43,13 +45,14 @@ Lucide inline SVG, `fill="none"`, `stroke="currentColor"`. Wrap in a div with `f
 
 Timeline — 2 zones, 15 seconds total:
 
-```
+
 0 ──────────  5s   ENTRY    All animations complete here
 5 ────────── 15s  AMBIENT  Compu fully visible. Aura and glass glow breathe. Nothing else.
-```
+
 - Trim the duration of the comps in the master index to match the context video, but set `DUR = 15` in every sub-composition — documents standalone duration, must match the timeline length.
 
-- **Stagger all entries** — minimum 0.12 s between elements. Simultaneous multi-element entry at t = 0 is **prohibited**. 
+- **Stagger all entries** — minimum 0.12 s between elements. Simultaneous multi-element entry at t = 0 is **prohibited**.
+- 
 - **No abrupt opacity changes** — all opacity transitions use `sine.inOut` or `power2.inOut`, minimum 0.6 s duration. Hard cuts (`duration: 0`) are **banned**.
 
 

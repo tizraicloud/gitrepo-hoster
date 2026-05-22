@@ -33,7 +33,9 @@ Keep copy short: 1–2 words for headlines, 2–4 words for kickers. Prefer icon
 - Glass surfaces have: gradient overlay, dark navy fill, backdrop-filter blur, cyan border, inner highlight, outer glow, and a ::before shimmer layer. Each card also gets an aura bloom behind it and a light speck off one corner.
 - Keep comps centrally aligned to the video canvas
 - Ensure that the text is not too small or the comp is not very cramped
-  
+- Wherever icons and headlines appear together, keep them in side by side stacking (and not vertical stacking). To optimise for space and compactness.
+
+
 ## Icons
 
 Lucide inline SVG, `fill="none"`, `stroke="currentColor"`. Wrap in a div with `filter: drop-shadow(0 0 16px rgba(125,249,255,0.60))`.
